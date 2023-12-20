@@ -90,5 +90,6 @@ resource "vsphere_virtual_machine" "vm" {
       clone[0].customize[0].dns_server_list,
       clone[0].customize[0].network_interface[0]
     ]
+    create_before_destroy = true
   }
 }

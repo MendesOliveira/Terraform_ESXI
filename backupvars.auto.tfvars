@@ -1,0 +1,17 @@
+cpu                    = 4
+cores-per-socket       = 1
+ram                    = 4096
+disksize               = 30 # in GB
+vm-guest-id            = "centos7_64Guest"
+vsphere-unverified-ssl = "true"
+vsphere-datacenter     = "Teste - Host ESXI"
+vsphere-cluster        = "Cluster01"
+vm-datastore           = "datastore1"
+vm-network             = "VM Network"
+vm-domain              = "home"
+dns_server_list        = ["192.168.3.4", "8.8.8.8"]
+name                   = "SRV-CD-NEW"
+ipv4_address           = "192.168.7.129"
+ipv4_gateway           = "192.168.7.254"
+ipv4_netmask           = "24"
+vm-template-name       = "SRV-DP-TST"

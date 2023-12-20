@@ -48,7 +48,7 @@ data "vsphere_network" "network" {
 
 data "vsphere_virtual_machine" "template" {
   #name          = "/${var.vsphere-datacenter}/vm/${var.vsphere-template-folder}/datastore1/${var.vm-template-name}"
-  name          = "/Teste - Host ESXI/vm/123/SRV-DP-TST"
+  name          = "/Teste - Host ESXI/vm/123/${var.vm-template-name}"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
